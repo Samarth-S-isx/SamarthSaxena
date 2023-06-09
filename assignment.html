@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>assignment</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href=""> -->
+  <link rel="stylesheet" href="./assignment.css">
+</head>
+<body>
+  <header>
+  <h2>Drag and Drop Images</h2>
+  <button onclick="reset()">Reset</button>
+  </header>
+  <div id="parent">
+    <div id="container1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="https://res.cloudinary.com/demonslayer/image/upload/v1683699276/cld-sample-5.jpg" draggable="true" ondragstart="drag(event)" id="drag1">
+      <img src="https://res.cloudinary.com/demonslayer/image/upload/v1683699276/cld-sample-5.jpg" draggable="true" ondragstart="drag(event)" id="drag2">
+      <img src="https://res.cloudinary.com/demonslayer/image/upload/v1683699276/cld-sample-5.jpg" draggable="true" ondragstart="drag(event)" id="drag3">
+      <img src="https://res.cloudinary.com/demonslayer/image/upload/v1683699276/cld-sample-5.jpg" draggable="true" ondragstart="drag(event)" id="drag4">
+      <p draggable="true" ondragstart="drag(event)" id="drag5">Draggable Text</p>
+      <img src="https://res.cloudinary.com/demonslayer/image/upload/v1683699276/cld-sample-5.jpg" draggable="true" ondragstart="drag(event)" id="drag6">
+    </div>
+    <div id="container2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>  
+
+  <!-- Reset button -->
+
+  <script src="./assignment.js"></script>
+</body>
+</html>
